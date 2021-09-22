@@ -1,0 +1,58 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '12.0'
+
+inhibit_all_warnings!
+
+target 'TengShiLive' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+  
+  # 腾视
+  pod 'TengShiLive_iOS'
+
+  # web交互 dsBridge
+  pod 'dsBridge'
+  # keychain KeychainAccess
+  pod 'KeychainAccess'
+  # 键盘管理 IQKeyboardManagerSwift
+   pod 'IQKeyboardManagerSwift'
+  # bug记录 Bugly
+  pod 'Bugly'
+  # 动画 Hero
+  pod 'Hero'
+  # 轮播图
+  pod 'LLCycleScrollView'
+  # 动态按钮
+  pod 'DynamicButton'
+  # 文本输入框
+  pod 'TextFieldEffects'
+  
+  pod 'UMCommon'
+  pod 'UMDevice'
+#  日志库（调试）开发阶段进行调试SDK及相关功能使用，可在发布 App 前移除
+  pod 'UMCCommonLog'
+  # U-Share SDK UI模块（分享面板，建议添加）
+  pod 'UMShare/UI'
+  # 推送
+  pod 'UMPush'
+  pod 'UMCSecurityPlugins'
+  # 集成微信(完整版14.4M)
+  pod 'UMShare/Social/WeChat'
+  # 集成QQ/QZone/TIM(完整版7.6M)
+  pod 'UMShare/Social/QQ'
+
+#  # 集成新浪微博(完整版25.3M)
+#  pod 'UMShare/Social/Sina'
+
+#  # UMCErrorCatch (1.0.0)
+#  pod 'UMCErrorCatch', '1.0.0'
+
+end
+
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        target.build_configurations.each do |config|
+            config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '12.0'
+        end
+    end
+end

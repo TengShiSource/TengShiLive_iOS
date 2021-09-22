@@ -1,0 +1,11 @@
+framework module TengShiLive_iOS {
+  umbrella header "TengShiLive_iOS.h"
+
+  export *
+  module * { export * }
+}
+
+module TengShiLive_iOS.Swift {
+    header "TengShiLive_iOS-Swift.h"
+    requires objc
+}
