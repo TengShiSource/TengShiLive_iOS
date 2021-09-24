@@ -10,12 +10,12 @@ import IQKeyboardManagerSwift
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
     var window: UIWindow?
     
     // 后台任务标识
     var backgroundTask:UIBackgroundTaskIdentifier! = nil
-
+    
     func createPush(launchOptions: [UIApplication.LaunchOptionsKey: Any]?) {
         // 推送
         let entity = UMessageRegisterEntity()
@@ -29,7 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             AppPrint(error)
         }
     }
-
+    
     //MARK: 配置键盘
     func createKeyboardManager() {
         /// 激活键盘管理
@@ -41,10 +41,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // 控制是否显示键盘上的工具条
         IQKeyboardManager.shared.enableAutoToolbar = true
     }
-
+    
     //MARK: 应用开始运行
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-
+        
         // 键盘管理
         createKeyboardManager()
         createPush(launchOptions: launchOptions)
@@ -56,9 +56,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.backgroundColor = UIColor.color_Background()
         return true
     }
-
+    
     func application(_ application: UIApplication, handleOpen url: URL) -> Bool {
-
+        
         let result = UMSocialManager.default()?.handleOpen(url)
         if let resultTemp = result {
             print(resultTemp)
@@ -72,7 +72,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     //MARK: open URL
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
-
+        
         //6.3的新的API调用，是为了兼容国外平台(例如:新版facebookSDK,VK等)的调用[如果用6.2的api调用会没有回调],对国内平台没有影响
         let result = UMSocialManager.default()?.handleOpen(url, options: options)
         if let resultTemp = result {
@@ -83,43 +83,43 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             // 其他如支付等SDK的回调
             return false
         }
-
+        
     }
     //MARK: Universal Links
     func application(_ application: UIApplication,
                      continue userActivity: NSUserActivity,
                      restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
         if (UMSocialManager.default()?.handleUniversalLink(userActivity, options: nil) == true) {
-                return true
-            }
+            return true
+        }
         
         // Get URL components from the incoming user activity.
         guard userActivity.activityType == NSUserActivityTypeBrowsingWeb,
-            let incomingURL = userActivity.webpageURL,
-            let components = NSURLComponents(url: incomingURL, resolvingAgainstBaseURL: true) else {
+              let incomingURL = userActivity.webpageURL,
+              let components = NSURLComponents(url: incomingURL, resolvingAgainstBaseURL: true) else {
             return false
         }
-
+        
         // Check for specific URL components that you need.
         guard let path = components.path,
-        let params = components.queryItems else {
+              let params = components.queryItems else {
             return false
         }
         print("path = \(path)")
-
+        
         if let albumName = params.first(where: { $0.name == "albumname" } )?.value,
-            let photoIndex = params.first(where: { $0.name == "index" })?.value {
-
+           let photoIndex = params.first(where: { $0.name == "index" })?.value {
+            
             print("album = \(albumName)")
             print("photoIndex = \(photoIndex)")
             return true
-
+            
         } else {
             print("Either album name or photo index missing")
             return false
         }
     }
- 
+    
     //MARK: 当应用程序将要入非活动状态执行，在此期间，应用程序不接收消息或事件，比如来电话了
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state.   This can occur for certain types of temporary interruptions (such as an     incoming phone call or SMS message) or when the user quits the application  and it begins the transition to the background state.
@@ -173,7 +173,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         APPSingleton.shared.deviceToken = deviceTokenString
     }
-
+    
     func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
         //      print(error)
     }
@@ -184,30 +184,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     /// 屏幕支持的方向
-    public var blockRotation: UIInterfaceOrientationMask = .portrait{
-            didSet{
-                if blockRotation.contains(.portrait){
-                    //强制设置成竖屏
-                    UIDevice.current.setValue(UIInterfaceOrientation.portrait.rawValue, forKey: "orientation")
-                }else{
-                    //强制设置成横屏
-                    UIDevice.current.setValue(UIInterfaceOrientation.landscapeLeft.rawValue, forKey: "orientation")
-                }
+    public var blockRotation: UIInterfaceOrientationMask = .portrait {
+        didSet{
+            if blockRotation.contains(.portrait){
+                //强制设置成竖屏
+                UIDevice.current.setValue(UIInterfaceOrientation.portrait.rawValue, forKey: "orientation")
+            }else{
+                //强制设置成横屏
+                UIDevice.current.setValue(UIInterfaceOrientation.landscapeLeft.rawValue, forKey: "orientation")
             }
         }
+    }
     
     //MARK: 设置屏幕支持的方向
     func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
         return blockRotation
     }
-
-
+    
 }
 
 //MARK:推送通知 UNUserNotificationCenterDelegate
 
 extension AppDelegate: UNUserNotificationCenterDelegate {
-
+    
     // iOS10新增：处理前台收到通知的代理方法
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
         
@@ -225,18 +224,18 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
                 AppPrint(trigger.self)
             }
         }
-
+        
         //当应用处于前台时提示设置，需要哪个可以设置哪一个
         completionHandler([.badge, .alert, .sound])
     }
-
+    
     @available(iOS 10.0, *)
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
         
         if let trigger = response.notification.request.trigger {
             
             let userInfo = response.notification.request.content.userInfo
-
+            
             if trigger is UNPushNotificationTrigger {
                 UMessageSwiftInterface.setAutoAlert(value: true)
                 UMessageSwiftInterface.didReceiveRemoteNotification(userInfo: userInfo)
