@@ -1,0 +1,150 @@
+PODS:
+  - Alamofire (5.4.3)
+  - Bugly (2.5.90)
+  - CryptoSwift (1.4.1)
+  - CSSegmentedControl (1.1)
+  - dsBridge (3.0.6)
+  - DynamicButton (6.2.1)
+  - Hero (1.6.1)
+  - IQKeyboardManagerSwift (6.5.6)
+  - KeychainAccess (4.2.2)
+  - Kingfisher (7.0.0)
+  - LLCycleScrollView (1.6.0):
+    - Kingfisher
+  - Schedule (2.1.0)
+  - SDWebImage (5.11.1):
+    - SDWebImage/Core (= 5.11.1)
+  - SDWebImage/Core (5.11.1)
+  - SnapKit (5.0.1)
+  - SVProgressHUD (2.2.5)
+  - TEduBoard_iOS (2.6.3.45)
+  - TengShiLive_iOS (0.0.4):
+    - Alamofire (~> 5.4.3.0)
+    - CryptoSwift (~> 1.4.1.0)
+    - CSSegmentedControl (~> 1.1.0)
+    - Schedule (~> 2.1.0.0)
+    - SDWebImage (~> 5.11.1.0)
+    - SnapKit (~> 5.0.1.0)
+    - SVProgressHUD (~> 2.2.5.0)
+    - TEduBoard_iOS (~> 2.6.3.45.0)
+    - TIWLogger_iOS (~> 1.0.1.28.0)
+    - TXIMSDK_iOS (~> 5.1.62.0)
+    - TXLiteAVSDK_Professional (~> 9.0.10433.0)
+    - ZLPhotoBrowser (~> 4.1.8.0)
+  - TextFieldEffects (1.6.0)
+  - TIWLogger_iOS (1.0.1.28)
+  - TXIMSDK_iOS (5.1.62)
+  - TXLiteAVSDK_Professional (9.0.10433)
+  - UMCCommonLog (2.0.2)
+  - UMCommon (7.3.5):
+    - UMDevice
+  - UMCSecurityPlugins (1.0.6)
+  - UMDevice (2.0.5)
+  - UMPush (3.3.1):
+    - UMCommon
+  - UMShare/Core (6.10.3):
+    - UMCommon
+  - UMShare/Social/QQ (6.10.3):
+    - UMCommon
+    - UMShare/Core
+    - UMShare/Social/ReducedQQ
+  - UMShare/Social/ReducedQQ (6.10.3):
+    - UMCommon
+    - UMShare/Core
+  - UMShare/Social/ReducedWeChat (6.10.3):
+    - UMCommon
+    - UMShare/Core
+  - UMShare/Social/WeChat (6.10.3):
+    - UMCommon
+    - UMShare/Core
+    - UMShare/Social/ReducedWeChat
+  - UMShare/UI (6.10.3):
+    - UMCommon
+    - UMShare/Core
+  - ZLPhotoBrowser (4.1.8):
+    - ZLPhotoBrowser/Core (= 4.1.8)
+  - ZLPhotoBrowser/Core (4.1.8)
+
+DEPENDENCIES:
+  - Bugly
+  - dsBridge
+  - DynamicButton
+  - Hero
+  - IQKeyboardManagerSwift
+  - KeychainAccess
+  - LLCycleScrollView
+  - TengShiLive_iOS
+  - TextFieldEffects
+  - UMCCommonLog
+  - UMCommon
+  - UMCSecurityPlugins
+  - UMDevice
+  - UMPush
+  - UMShare/Social/QQ
+  - UMShare/Social/WeChat
+  - UMShare/UI
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Bugly
+    - CryptoSwift
+    - CSSegmentedControl
+    - dsBridge
+    - DynamicButton
+    - Hero
+    - IQKeyboardManagerSwift
+    - KeychainAccess
+    - Kingfisher
+    - LLCycleScrollView
+    - Schedule
+    - SDWebImage
+    - SnapKit
+    - SVProgressHUD
+    - TEduBoard_iOS
+    - TengShiLive_iOS
+    - TextFieldEffects
+    - TIWLogger_iOS
+    - TXIMSDK_iOS
+    - TXLiteAVSDK_Professional
+    - UMCCommonLog
+    - UMCommon
+    - UMCSecurityPlugins
+    - UMDevice
+    - UMPush
+    - UMShare
+    - ZLPhotoBrowser
+
+SPEC CHECKSUMS:
+  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
+  Bugly: 88bc32c0acc6fef7b74d610f0319ee7560d6b9fe
+  CryptoSwift: 0bc800a7e6a24c4fc9ebeab97d44b0d5f73a78bd
+  CSSegmentedControl: 73520038b619748635b51cac4d184ae27eda433d
+  dsBridge: 48b62ee8a411ad601a88d6f6c8cf6cb634b206b7
+  DynamicButton: 95f30460793bd3510a5c213ac1b810a5e3d54b6a
+  Hero: 215865ba3ae41dd9bb08cd6c60a645529c6fc94b
+  IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
+  KeychainAccess: c0c4f7f38f6fc7bbe58f5702e25f7bd2f65abf51
+  Kingfisher: 5efc54fec3980f92354898532e562cc17f31efb4
+  LLCycleScrollView: a08f666671f9fd1a205df9defebc3c217d59abc8
+  Schedule: 00e6d7bbdbdb000fd1f51a7d10e9f88a8c451fda
+  SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  TEduBoard_iOS: 4724e16384d1c18f02e059419918330d1805a037
+  TengShiLive_iOS: 283557af51bd756a4ed6c9cca3cb68689464aaeb
+  TextFieldEffects: 529b8aff706fb40f82c41c780c0777941a893796
+  TIWLogger_iOS: 51afa3bb0a3695a52e240eea1ea6e87b174a91f9
+  TXIMSDK_iOS: 4016cc84a61db57fc8ca024becf47ad229bbeef1
+  TXLiteAVSDK_Professional: b3b177c78bb08575fb5c2a85e9bcc061fbeba1d9
+  UMCCommonLog: bea707e50c85cef4b0eb47cc5c7226bb843245ca
+  UMCommon: ab4d875ddefe1b06c60b577e4a58bc4d433ee067
+  UMCSecurityPlugins: 0831a08f3988f3cea9f1d3a7626cd9bee4fef150
+  UMDevice: c13bbb2e8ca6c67d1e23e03162553e3ec5a8b5b0
+  UMPush: 7ef2ff2fcca16e4d5c7897183a78a0d26f920bfe
+  UMShare: a3f9cb2d3ece67edd2c58331bd89bfffb289782b
+  ZLPhotoBrowser: dade64326c9a854a68a99ba260c752c2d7839d7e
+
+PODFILE CHECKSUM: 12bd57388343745a0d7c898e1d1c2ede41e8d383
+
+COCOAPODS: 1.11.2
