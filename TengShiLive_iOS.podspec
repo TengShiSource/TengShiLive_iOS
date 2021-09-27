@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
      spec.name         = "TengShiLive_iOS"
-     spec.version      = "0.0.2"
+     spec.version      = "0.0.3"
      spec.summary      = "腾视 iOS SDK"
 
   #  This description is used to generate tags and improve search results.
@@ -132,8 +132,8 @@ Pod::Spec.new do |spec|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-    spec.swift_version = "5.0"
-    #spec.swift_versions = ['5.0', '5.1', '5.2', '5.3', '5.4', '5.5']
+  # spec.swift_version = "5.0"
+    spec.swift_versions = ['5.0', '5.1', '5.2', '5.3', '5.4', '5.5']
     
     spec.requires_arc = true
 
