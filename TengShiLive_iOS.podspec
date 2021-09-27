@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
      spec.name         = "TengShiLive_iOS"
-     spec.version      = "0.0.3"
+     spec.version      = "0.0.4"
      spec.summary      = "腾视 iOS SDK"
 
   #  This description is used to generate tags and improve search results.
@@ -140,27 +140,27 @@ Pod::Spec.new do |spec|
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
 
   # 网络请求 Alamofire
-     spec.dependency "Alamofire", "~> 5.4.3"
+     spec.dependency "Alamofire", "~> 5.4.3.0"
   # 自动布局 SnapKit
-     spec.dependency "SnapKit", "~> 5.0.1"
+     spec.dependency "SnapKit", "~> 5.0.1.0"
   # 图片加载（OC）
-     spec.dependency "SDWebImage", "~> 5.11.1"
+     spec.dependency "SDWebImage", "~> 5.11.1.0"
   # 分段选择器
-     spec.dependency "CSSegmentedControl", "~> 1.1"
+     spec.dependency "CSSegmentedControl", "~> 1.1.0"
   # 活动指示器 SVProgressHUD
-     spec.dependency "SVProgressHUD", "~> 2.2.5"
+     spec.dependency "SVProgressHUD", "~> 2.2.5.0"
   # 图片选取
-     spec.dependency  "ZLPhotoBrowser", "~> 4.1.7"
+     spec.dependency  "ZLPhotoBrowser", "~> 4.1.8.0"
   # 计时器 Schedule
-     spec.dependency  "Schedule", "~> 2.1.0"
+     spec.dependency  "Schedule", "~> 2.1.0.0"
   # 加密解密
-    spec.dependency  "CryptoSwift", "~> 1.4.1"
+    spec.dependency  "CryptoSwift", "~> 1.4.1.0"
   #  腾讯白板 TIW（不支持Bitcode）
-    spec.dependency  'TEduBoard_iOS', '~> 2.6.3.45'
+    spec.dependency  'TEduBoard_iOS', '~> 2.6.3.45.0'
   #  腾讯 IM
-    spec.dependency  'TXIMSDK_iOS', '~> 5.1.62'
+    spec.dependency  'TXIMSDK_iOS', '~> 5.1.62.0'
   #  腾讯实时音视频 TRTC
-    spec.dependency  'TXLiteAVSDK_Professional', '~> 9.0.10433'
-    spec.dependency  'TIWLogger_iOS', '~> 1.0.1.28'
+    spec.dependency  'TXLiteAVSDK_Professional', '~> 9.0.10433.0'
+    spec.dependency  'TIWLogger_iOS', '~> 1.0.1.28.0'
 
 end
