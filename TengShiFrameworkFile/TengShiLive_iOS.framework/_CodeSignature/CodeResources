@@ -30,27 +30,27 @@
 		</data>
 		<key>Modules/TengShiLive_iOS.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		CoEnaQdpJaHVdjGNj0+YmeFTZuI=
+		1i9n7l41kK9GnSNXwW7n/Y8pqjw=
 		</data>
 		<key>Modules/TengShiLive_iOS.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		CoEnaQdpJaHVdjGNj0+YmeFTZuI=
+		1i9n7l41kK9GnSNXwW7n/Y8pqjw=
 		</data>
 		<key>Modules/TengShiLive_iOS.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		sisnOSKpKa1TWSMMIxqIPFEEZuo=
+		3j2l36i6R1O+fbe+REQgwQoSVCY=
 		</data>
 		<key>Modules/TengShiLive_iOS.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		WwYxoYLm8aeLjdaigdkx4jvrQQw=
+		8QG3o98EXq31lRDr5YS5Xl71AeI=
 		</data>
 		<key>Modules/TengShiLive_iOS.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		sisnOSKpKa1TWSMMIxqIPFEEZuo=
+		3j2l36i6R1O+fbe+REQgwQoSVCY=
 		</data>
 		<key>Modules/TengShiLive_iOS.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		WwYxoYLm8aeLjdaigdkx4jvrQQw=
+		8QG3o98EXq31lRDr5YS5Xl71AeI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -122,66 +122,66 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CoEnaQdpJaHVdjGNj0+YmeFTZuI=
+			1i9n7l41kK9GnSNXwW7n/Y8pqjw=
 			</data>
 			<key>hash2</key>
 			<data>
-			PcqgQG5Qa4ZpqiRAeMcnUywSTXIBd7ix4rHJs4RBw8Y=
+			kBl6NSvdgHTcfYMhCG3cFxKTI5OgTK4zkAbgQFCxPpE=
 			</data>
 		</dict>
 		<key>Modules/TengShiLive_iOS.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			CoEnaQdpJaHVdjGNj0+YmeFTZuI=
+			1i9n7l41kK9GnSNXwW7n/Y8pqjw=
 			</data>
 			<key>hash2</key>
 			<data>
-			PcqgQG5Qa4ZpqiRAeMcnUywSTXIBd7ix4rHJs4RBw8Y=
+			kBl6NSvdgHTcfYMhCG3cFxKTI5OgTK4zkAbgQFCxPpE=
 			</data>
 		</dict>
 		<key>Modules/TengShiLive_iOS.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			sisnOSKpKa1TWSMMIxqIPFEEZuo=
+			3j2l36i6R1O+fbe+REQgwQoSVCY=
 			</data>
 			<key>hash2</key>
 			<data>
-			N0uDhEh+iovR+p0ZVSuFPkXuDg4PukEHiwlbtlGJ9fw=
+			u8A5/9ThpmV03YCy/BcNYnnDKNe/dl6lQRg3PXqtymk=
 			</data>
 		</dict>
 		<key>Modules/TengShiLive_iOS.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			WwYxoYLm8aeLjdaigdkx4jvrQQw=
+			8QG3o98EXq31lRDr5YS5Xl71AeI=
 			</data>
 			<key>hash2</key>
 			<data>
-			PXAv1lIt9Mo1RmvelPP5EjcGuawJ4hOA8VbfPHrrWis=
+			zCAoT/OSSPS+3DV7OlcRQOfbG6liTF0smGjHE2Exh1c=
 			</data>
 		</dict>
 		<key>Modules/TengShiLive_iOS.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			sisnOSKpKa1TWSMMIxqIPFEEZuo=
+			3j2l36i6R1O+fbe+REQgwQoSVCY=
 			</data>
 			<key>hash2</key>
 			<data>
-			N0uDhEh+iovR+p0ZVSuFPkXuDg4PukEHiwlbtlGJ9fw=
+			u8A5/9ThpmV03YCy/BcNYnnDKNe/dl6lQRg3PXqtymk=
 			</data>
 		</dict>
 		<key>Modules/TengShiLive_iOS.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			WwYxoYLm8aeLjdaigdkx4jvrQQw=
+			8QG3o98EXq31lRDr5YS5Xl71AeI=
 			</data>
 			<key>hash2</key>
 			<data>
-			PXAv1lIt9Mo1RmvelPP5EjcGuawJ4hOA8VbfPHrrWis=
+			zCAoT/OSSPS+3DV7OlcRQOfbG6liTF0smGjHE2Exh1c=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
