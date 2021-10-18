@@ -10,6 +10,7 @@ import KeychainAccess
 import WebKit
 import Alamofire
 
+
 //MARK: Keychain
 /// 名称
 let SERVICE_NAME = "com.QiMing.qmschool"
@@ -151,7 +152,10 @@ class APPSingleton {
     }
     //MARK: 配置Bugly
     func createBugly() {
-        Bugly.start(withAppId: "1d6af43dc7")
+        let config = BuglyConfig()
+        // 设置自定义日志上报的级别，默认不上报自定义日志
+        config.reportLogLevel = .warn
+        Bugly.start(withAppId: nil, config: config)
     }
 
     //MARK:用户登录信息

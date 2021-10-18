@@ -11,7 +11,18 @@ import Schedule
 /// 启动页
 class APPLaunchPageViewController: BaseViewController {
     
-    private lazy var bottomView:UIImageView = UIImageView()
+
+    private lazy var bottomView: UIImageView = {
+        let imageView = UIImageView(image: UIImage(named: "启动页背景图"))
+        imageView.contentMode = .scaleToFill
+        return imageView
+    }()
+    
+    private lazy var topView: UIImageView = {
+        let imageView = UIImageView(image: UIImage(named: "启动页顶部图"))
+        imageView.contentMode = .scaleAspectFit
+        return imageView
+    }()
     
     /// 倒计时Label
     let timerLabel = UILabel()
@@ -36,16 +47,18 @@ class APPLaunchPageViewController: BaseViewController {
     func createUI(){
 
         /// 背景图
-        bottomView.image = UIImage(named: "启动图.png")
-        bottomView.contentMode = .scaleAspectFit
         view.addSubview(bottomView)
         bottomView.snp.makeConstraints { (make) in
             make.edges.equalTo(UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0))
         }
-        
+        view.addSubview(topView)
+        topView.snp.makeConstraints { make in
+            make.edges.equalTo(UIEdgeInsets(top: 60, left: 20, bottom: 40, right: 20))
+        }
+
         // 倒计时lable
         timerLabel.textColor = color_white
-        timerLabel.backgroundColor = color_gray
+        timerLabel.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.1990885956)
         timerLabel.font = UIFont.systemFont(ofSize: 14)
         timerLabel.text = "跳过 \(self.timerCount)s"
         timerLabel.textAlignment = .center
@@ -83,7 +96,6 @@ class APPLaunchPageViewController: BaseViewController {
                 self.timerCount = self.timerCount-1
             }
         }
-        
     }
     
     @objc func goToNextPage() {
@@ -109,7 +121,5 @@ class APPLaunchPageViewController: BaseViewController {
             }
             
         }
-        
-        
     }
 }

@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>启明课堂</string>
+	<string>腾视直播</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -26,10 +26,10 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>com.QiMing.qmschool</string>
+			<string>com.QMJY.TengShiLive</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>qmschool</string>
+				<string>TengShiLive</string>
 			</array>
 		</dict>
 		<dict>
@@ -39,7 +39,7 @@
 			<string>weixin</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>wx</string>
+				<string>wx49931533a8d3600b</string>
 			</array>
 		</dict>
 		<dict>
@@ -47,7 +47,7 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>tencent</string>
+				<string>tencent1111594740</string>
 			</array>
 		</dict>
 		<dict>
@@ -55,7 +55,7 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>QQ</string>
+				<string>QQ424196f4</string>
 			</array>
 		</dict>
 	</array>

@@ -8,7 +8,7 @@
 import UIKit
 import IQKeyboardManagerSwift
 
-import TengShiLive_iOS
+ import TengShiLive_iOS
 
 /// 登录课堂
 class LoginClassroomViewController: BaseViewController {
@@ -45,6 +45,7 @@ class LoginClassroomViewController: BaseViewController {
         button.addTarget(self,
                          action: #selector(tapShareButton(sender:)),
                          for: .touchUpInside)
+        button.isHidden = true
         return button
     }()
     @objc func tapShareButton(sender:UIButton) {
@@ -92,7 +93,7 @@ class LoginClassroomViewController: BaseViewController {
     // 标题
     lazy var titleLabel: UILabel = {
         let label = UILabel()
-        label.text = "启明课堂"
+        label.text = "腾视直播"
         label.font = UIFont.systemFont(ofSize: 26)
         label.textAlignment = .center
         return label
@@ -249,11 +250,44 @@ class LoginClassroomViewController: BaseViewController {
         return button
     }()
     
+    func showAlert(title:String, message:String) {
+        let alertVC:UIAlertController = UIAlertController(title: "登录信息不完整",
+                                                          message: "立即前往设置",
+                                                          preferredStyle: UIAlertController.Style.alert)
+        alertVC.addAction(UIAlertAction(title: "确定",
+                                        style: UIAlertAction.Style.default,
+                                        handler: { (handler) in
+                                            self.tapSetButton(sender: self.setButton)
+                                        }))
+        alertVC.addAction(UIAlertAction(title: "取消",
+                                        style: UIAlertAction.Style.cancel,
+                                        handler: { (handler) in
+
+                                        }))
+        if let presentedVC = self.presentedViewController {
+            presentedVC.dismiss(animated: true) {
+                self.present(alertVC, animated: true) {}
+            }
+        }
+        else {
+            self.present(alertVC, animated: true) {}
+        }
+    }
+    
+    /// 点击进入课堂按钮
+    /// - Parameter sender: 按钮
     @objc func tapJoinButton(sender:UIButton) {
-        //addStudents(students: [[:]])
-        view.endEditing(true)
-        // 注册用户
-        registUser()
+        if APPSingleton.shared.userId<=0 ||
+            APPSingleton.shared.nickname.count <= 0 ||
+            APPSingleton.shared.QMAPPID.count <= 0 ||
+            APPSingleton.shared.QMAPPSecret.count <= 0{
+            self.showAlert(title: "登录信息不完整", message: "立即设置")
+        }
+        else {
+            view.endEditing(true)
+            // 注册用户
+            registUser()
+        }
     }
     
     /// 注册用户
@@ -421,11 +455,6 @@ class LoginClassroomViewController: BaseViewController {
         super.viewDidLoad()
         createUI()
         updateLogoName()
-        if APPSingleton.shared.QMAPPID.count<=0 ||
-            APPSingleton.shared.userId<=0 {
-            let VC = SetClassroomViewController()
-            self.navigationController?.pushViewController(VC, animated: true)
-        }
         if String(APPSingleton.shared.QMCourseId).count > 0 {
             checkClassState(courseId: String(APPSingleton.shared.QMCourseId))
         }

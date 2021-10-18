@@ -45,6 +45,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     //MARK: 应用开始运行
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
+        APPSingleton.shared.QMAPPID = APP_KEY
+        APPSingleton.shared.QMAPPSecret = APP_SECRET
+        
         // 键盘管理
         createKeyboardManager()
         createPush(launchOptions: launchOptions)
