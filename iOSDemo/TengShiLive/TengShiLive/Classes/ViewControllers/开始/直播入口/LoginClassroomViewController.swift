@@ -20,6 +20,16 @@ class LoginClassroomViewController: BaseViewController {
         return imageView
     }()
     
+    // 版本号
+    lazy var versionLabel: UILabel = {
+        let label = UILabel()
+        label.font = UIFont.systemFont(ofSize: 12)
+        label.textColor = .gray
+        label.textAlignment = .center
+        label.text = APP_VERSION + "(" + APP_VERSION_BUNDLE + ")"
+        return label
+    }()
+    
     // 设置按钮
     lazy var setButton: UIButton = {
         let button = UIButton(type: .custom)
@@ -579,6 +589,13 @@ class LoginClassroomViewController: BaseViewController {
             make.top.equalTo(joinButton.snp.bottom).offset(20)
             make.size.equalTo(CGSize(width: 120, height: 20))
             make.centerX.equalTo(view)
+        }
+        view.addSubview(versionLabel)
+        versionLabel.snp.makeConstraints { make in
+            make.height.equalTo(30)
+            make.bottom.equalTo(view.safeAreaLayoutGuide)
+            make.left.equalTo(0)
+            make.right.equalTo(0)
         }
     }
     
