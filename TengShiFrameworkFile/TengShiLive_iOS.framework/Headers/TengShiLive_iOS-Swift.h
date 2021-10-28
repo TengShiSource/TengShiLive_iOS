@@ -223,11 +223,20 @@ SWIFT_CLASS("_TtC15TengShiLive_iOS20QMBaseViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@protocol QMManagerDelegate;
 
 SWIFT_CLASS("_TtC15TengShiLive_iOS9QMManager")
 @interface QMManager : NSObject
+/// 单例
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) QMManager * _Nonnull shared;)
++ (QMManager * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+- (QMManager * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+/// 代理
+@property (nonatomic, weak) id <QMManagerDelegate> _Nullable delegate;
+@property (nonatomic, weak) UIViewController * _Nullable weakVC;
+- (void)qmJoinClassroomWithViewController:(UIViewController * _Nonnull)ViewController isTeacher:(BOOL)isTeacher token:(NSString * _Nonnull)token;
 @end
 
 

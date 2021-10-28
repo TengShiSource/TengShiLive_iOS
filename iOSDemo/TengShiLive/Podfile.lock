@@ -18,7 +18,7 @@ PODS:
   - SnapKit (5.0.1)
   - SVProgressHUD (2.2.5)
   - TEduBoard_iOS (2.6.3.45)
-  - TengShiLive_iOS (1.0.0):
+  - TengShiLive_iOS (1.0.1):
     - Alamofire (~> 5.4.3.0)
     - CryptoSwift (~> 1.4.1.0)
     - CSSegmentedControl (~> 1.1.0)
@@ -132,7 +132,7 @@ SPEC CHECKSUMS:
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   TEduBoard_iOS: 4724e16384d1c18f02e059419918330d1805a037
-  TengShiLive_iOS: 9e4282f3d2c6e9457bdec72bc2d85775c01720db
+  TengShiLive_iOS: 99a246bac862b9fe3d8f015521ad23863371d440
   TextFieldEffects: 529b8aff706fb40f82c41c780c0777941a893796
   TIWLogger_iOS: 51afa3bb0a3695a52e240eea1ea6e87b174a91f9
   TXIMSDK_iOS: 4016cc84a61db57fc8ca024becf47ad229bbeef1
