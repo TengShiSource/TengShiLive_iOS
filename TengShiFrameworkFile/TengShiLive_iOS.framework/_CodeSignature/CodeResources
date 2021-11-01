@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/TengShiLive_iOS.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		fOC34KuFDEQBpb6sOkQJI8/gm4k=
+		SFJ5CdT0LoI2g3ob7wLT3KB2lA0=
 		</data>
 		<key>Modules/TengShiLive_iOS.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		fOC34KuFDEQBpb6sOkQJI8/gm4k=
+		SFJ5CdT0LoI2g3ob7wLT3KB2lA0=
 		</data>
 		<key>Modules/TengShiLive_iOS.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Modules/TengShiLive_iOS.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		iFy3uF96w+HW8tp6c7KlsX6Mj5w=
+		qz04N0pr/SpNgsqs2QpGA+JHeHo=
 		</data>
 		<key>Modules/TengShiLive_iOS.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/TengShiLive_iOS.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		iFy3uF96w+HW8tp6c7KlsX6Mj5w=
+		qz04N0pr/SpNgsqs2QpGA+JHeHo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -122,22 +122,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fOC34KuFDEQBpb6sOkQJI8/gm4k=
+			SFJ5CdT0LoI2g3ob7wLT3KB2lA0=
 			</data>
 			<key>hash2</key>
 			<data>
-			i5vfkITAu61gGgDKTyjwZ3R8/66rb6hagIr8cFNr7e4=
+			bK9vERhs9Qt+peeETJnd+LQcb8U9tzz3m7musjr6yKs=
 			</data>
 		</dict>
 		<key>Modules/TengShiLive_iOS.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			fOC34KuFDEQBpb6sOkQJI8/gm4k=
+			SFJ5CdT0LoI2g3ob7wLT3KB2lA0=
 			</data>
 			<key>hash2</key>
 			<data>
-			i5vfkITAu61gGgDKTyjwZ3R8/66rb6hagIr8cFNr7e4=
+			bK9vERhs9Qt+peeETJnd+LQcb8U9tzz3m7musjr6yKs=
 			</data>
 		</dict>
 		<key>Modules/TengShiLive_iOS.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -155,11 +155,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			iFy3uF96w+HW8tp6c7KlsX6Mj5w=
+			qz04N0pr/SpNgsqs2QpGA+JHeHo=
 			</data>
 			<key>hash2</key>
 			<data>
-			8Pgvzr30pkBYwzFUBPkRfiTyMiJZtU8nqZEGXrI7sHw=
+			BoL624iXklgX0nJRO3EyCKwMpzgMUtC97RbX/YP3LcA=
 			</data>
 		</dict>
 		<key>Modules/TengShiLive_iOS.swiftmodule/arm64.swiftdoc</key>
@@ -177,11 +177,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			iFy3uF96w+HW8tp6c7KlsX6Mj5w=
+			qz04N0pr/SpNgsqs2QpGA+JHeHo=
 			</data>
 			<key>hash2</key>
 			<data>
-			8Pgvzr30pkBYwzFUBPkRfiTyMiJZtU8nqZEGXrI7sHw=
+			BoL624iXklgX0nJRO3EyCKwMpzgMUtC97RbX/YP3LcA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
