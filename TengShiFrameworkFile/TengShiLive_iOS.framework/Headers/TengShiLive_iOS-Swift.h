@@ -236,7 +236,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) QMManager * 
 /// 代理
 @property (nonatomic, weak) id <QMManagerDelegate> _Nullable delegate;
 @property (nonatomic, weak) UIViewController * _Nullable weakVC;
-- (void)qmJoinClassroomWithViewController:(UIViewController * _Nonnull)ViewController isTeacher:(BOOL)isTeacher token:(NSString * _Nonnull)token;
+- (void)qmJoinClassroomWithViewController:(UIViewController * _Nonnull)ViewController token:(NSString * _Nonnull)token;
 @end
 
 
