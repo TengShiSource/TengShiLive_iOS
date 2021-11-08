@@ -134,7 +134,6 @@ class CreateClassroomViewController: BaseViewController {
     // 创建课
     func createCourse() {
         if nameView.textField.text?.count ?? 0 > 0 {
-            
             HUDManager.showHUD(content: "创建中...")
             let name = nameView.textField.text ?? ""
             let appId:String = APPSingleton.shared.QMAPPID
@@ -142,7 +141,7 @@ class CreateClassroomViewController: BaseViewController {
             let sPassword = sPasswordView.textField.text ?? ""
             let courseOptions:[String:Any] = ["recMethod":recMethod,
                                              "openClassReminder":"y",
-                                             "callbackUrl":"http://jledu.f3322.net:9208/live/test/callback"]
+                                             "callbackUrl":""]
             APPSingleton.shared.requestCreateCourse(appId: appId,
                                                     courseName: name,
                                                     teacherPwd: tPassword,

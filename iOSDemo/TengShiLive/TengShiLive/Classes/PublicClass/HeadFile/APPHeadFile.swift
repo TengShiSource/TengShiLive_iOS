@@ -55,14 +55,11 @@ let SMS_CODE_LENGHT: Int = 4
 typealias resultMethod = (_ isSuccess:Bool, _ data:[String:Any]?, _ message:String, _ error:Error?) -> Void
 
 
+//// 服务器地址（开发环境）
+//let DEFAULT_URL:String = "http://125.32.43.126:9208/live"
+
 // 服务器地址（正式环境）
-// let DEFAULT_URL:String = "https://api.jledu.com/api"
-
-// 服务器地址（开发环境）
- let DEFAULT_URL:String = "http://125.32.43.126:9208/live"
-
-// 服务器地址（测试环境）
-// let DEFAULT_URL:String = "http://jledu.f3322.net:10000/api"
+let DEFAULT_URL:String = "https://live.qmzhjy.com/live"
 
 
 //MARK: APP接口

@@ -6,7 +6,7 @@ PODS:
   - dsBridge (3.0.6)
   - DynamicButton (6.2.1)
   - Hero (1.6.1)
-  - IQKeyboardManagerSwift (6.5.6)
+  - IQKeyboardManagerSwift (6.5.8)
   - KeychainAccess (4.2.2)
   - Kingfisher (7.1.1)
   - LLCycleScrollView (1.6.0):
@@ -18,7 +18,7 @@ PODS:
   - SnapKit (5.0.1)
   - SVProgressHUD (2.2.5)
   - TEduBoard_iOS (2.6.3.45)
-  - TengShiLive_iOS (1.0.2):
+  - TengShiLive_iOS (1.0.4):
     - Alamofire (~> 5.4.3.0)
     - CryptoSwift (~> 1.4.1.0)
     - CSSegmentedControl (~> 1.1.0)
@@ -123,7 +123,7 @@ SPEC CHECKSUMS:
   dsBridge: 48b62ee8a411ad601a88d6f6c8cf6cb634b206b7
   DynamicButton: 95f30460793bd3510a5c213ac1b810a5e3d54b6a
   Hero: 215865ba3ae41dd9bb08cd6c60a645529c6fc94b
-  IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
+  IQKeyboardManagerSwift: 8139150a3c90a915a413d72a8a3e8634c2d3278b
   KeychainAccess: c0c4f7f38f6fc7bbe58f5702e25f7bd2f65abf51
   Kingfisher: f738f9c4a3415823b8e2985d10aa2d6a9f37bc4d
   LLCycleScrollView: a08f666671f9fd1a205df9defebc3c217d59abc8
@@ -132,7 +132,7 @@ SPEC CHECKSUMS:
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   TEduBoard_iOS: 4724e16384d1c18f02e059419918330d1805a037
-  TengShiLive_iOS: 4f921d9e132564fdd15886b8db12868eca128453
+  TengShiLive_iOS: 3bc74825c30d213dc43e5d0a2cee13dde014f99f
   TextFieldEffects: 529b8aff706fb40f82c41c780c0777941a893796
   TIWLogger_iOS: 51afa3bb0a3695a52e240eea1ea6e87b174a91f9
   TXIMSDK_iOS: 4016cc84a61db57fc8ca024becf47ad229bbeef1

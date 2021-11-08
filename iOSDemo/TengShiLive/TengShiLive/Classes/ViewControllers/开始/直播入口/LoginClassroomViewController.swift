@@ -334,7 +334,6 @@ class LoginClassroomViewController: BaseViewController {
         if APPSingleton.shared.QMToken.count>0 {
 
             QMManager.shared.qmJoinClassroom(ViewController: self,
-                                             isTeacher: (APPSingleton.shared.role == .teacher ? true : false),
                                              token: APPSingleton.shared.QMToken)
             QMManager.shared.delegate = self
             // 控制是否显示键盘上的工具条
@@ -590,6 +589,7 @@ class LoginClassroomViewController: BaseViewController {
             make.size.equalTo(CGSize(width: 120, height: 20))
             make.centerX.equalTo(view)
         }
+        
         view.addSubview(versionLabel)
         versionLabel.snp.makeConstraints { make in
             make.height.equalTo(30)
