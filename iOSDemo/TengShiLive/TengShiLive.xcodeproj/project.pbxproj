@@ -812,17 +812,15 @@
 				DEVELOPMENT_TEAM = R2YCF2757L;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
 					"$(PROJECT_DIR)/TengShiLive/Classes/Classlib",
-					"$(PROJECT_DIR)/TengShiLive/TengShiLive_iOS",
-					"$(PROJECT_DIR)/TengShiLive/TenShiLiveSDK",
+					"$(inherited)",
 				);
 				INFOPLIST_FILE = TengShiLive/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.QMJY.qmschool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "TengShiLive/TengShiLive-Bridging-Header.h";
@@ -846,15 +844,13 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/TengShiLive/Classes/Classlib",
-					"$(PROJECT_DIR)/TengShiLive/TengShiLive_iOS",
-					"$(PROJECT_DIR)/TengShiLive/TenShiLiveSDK",
 				);
 				INFOPLIST_FILE = TengShiLive/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.QMJY.qmschool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "TengShiLive/TengShiLive-Bridging-Header.h";
