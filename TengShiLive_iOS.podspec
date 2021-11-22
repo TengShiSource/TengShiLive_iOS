@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
      spec.name         = "TengShiLive_iOS"
-     spec.version      = "1.0.5"
+     spec.version      = "1.0.6"
      spec.summary      = "腾视 iOS SDK"
 
   #  This description is used to generate tags and improve search results.
@@ -150,7 +150,7 @@ Pod::Spec.new do |spec|
   # 活动指示器 SVProgressHUD
      spec.dependency "SVProgressHUD", "~> 2.2.5.0"
   # 图片选取
-     spec.dependency  "ZLPhotoBrowser", "~> 4.1.8.0"
+     spec.dependency  "ZLPhotoBrowser", "~> 4.1.9.0"
   # 计时器 Schedule
      spec.dependency  "Schedule", "~> 2.1.0.0"
   # 加密解密
